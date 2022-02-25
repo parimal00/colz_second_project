@@ -1,0 +1,27 @@
+.chat-box{
+    width: 200px;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    left: 75%;
+}
+.chat-box .header{
+    height: 30px;
+    width:100%;
+    background-color: lightgreen;
+    border: white 1px solid;
+    text-align:center;
+    
+}
+.label-success{
+    background-color: black;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
+.label-danger{
+    background-color: white;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+}
