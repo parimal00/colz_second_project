@@ -162,7 +162,7 @@ if(!isset($_SESSION['librarian'])){
                                 Add content to the page ...
                                 <?php
 
-                            $sql = "select * from student_registration";
+                            $sql = "select * from student_registration where status='yes'";
                             $result = mysqli_query($conn, $sql);
 
                             echo'
@@ -176,8 +176,7 @@ if(!isset($_SESSION['librarian'])){
                             <th>semester</th>
                             <th>roll_no</th>
                             <th>status</th>
-                            <th>Approve</th>
-                            <th>Not Approve</th>
+                           
                             </tr>';
 
 
@@ -195,8 +194,7 @@ if(!isset($_SESSION['librarian'])){
                               echo   ' <th>'; echo $row["semester"];  echo '</th>';
                               echo   ' <th>'; echo $row["roll_no"];  echo '</th>';
                               echo   ' <th>'; echo $row["status"];  echo '</th>';
-                              echo   ' <th>'; ?> <a href="approve.php?id=<?php echo $row['id']; ?>">Approve </a> <?php echo '</th>';
-                              echo   ' <th>'; ?> <a href="notapprove.php?id=<?php echo $row['id']; ?>">Not Approve </a> <?php echo '</th>';
+                             
                             echo'  </tr>';
 
                             }

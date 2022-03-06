@@ -2,7 +2,7 @@
 
 include "../../../includes/connect.php";
 session_start();
-if(!isset($_SESSION['librarian'])){
+if(!isset($_SESSION['admin'])){
   header("Location: ../../../index.php");
 }
  ?>
@@ -45,7 +45,7 @@ if(!isset($_SESSION['librarian'])){
                     <div class="profile_info">
                         <span>Welcome,</span>
 
-                        <h2><?php echo $_SESSION['librarian']; ?>
+                        <h2><?php echo $_SESSION['admin']; ?>
                         </h2>
                     </div>
                     <div class="clearfix"></div>
